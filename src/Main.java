@@ -29,6 +29,9 @@ public class Main {
         }
 
         //calculations
+        double tipAmount = billNoTip * tipDecimal;
+        double billWithTip = billNoTip + tipAmount;
+        double perPersonNoTip = billNoTip/numPeople;
 
 
         System.out.println("user total: " + billNoTip);
