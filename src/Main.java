@@ -45,6 +45,7 @@ public class Main {
         double perPersonWithTip = billWithTip / numPeople;
 
         //formatting
+        String formatBillNoTip = formatter.format(billNoTip);
         String formatTipAmount = formatter.format(tipAmount);
         String formatBillWithTip = formatter.format(billWithTip);
         String formatPerPersonNoTip = formatter.format(perPersonNoTip);
@@ -53,7 +54,7 @@ public class Main {
 
 
         //printing information
-        System.out.println("Total Bill Before Tip: " + billNoTip);
+        System.out.println("Total Bill Before Tip: " + formatBillNoTip);
         System.out.println("Tip Percentage: " + tipPercentage);
         System.out.println("Total Tip: " + formatTipAmount);
         System.out.println("Total Bill with Tip: " + formatBillWithTip);
